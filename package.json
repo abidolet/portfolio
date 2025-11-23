@@ -1,0 +1,25 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts":
+	{
+		"build:css": "npx @tailwindcss/cli -i ./src/css/input.css -o ./build/output.css --minify",
+		"build:ts": "tsc",
+		"build": "npm run build:css && npm run build:ts",
+		"dev:css": "npx @tailwindcss/cli -i ./src/css/input.css -o ./build/output.css --watch",
+		"dev:ts": "tsc --watch",
+		"dev": "concurrently \"npm run dev:css\" \"npm run dev:ts\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies":
+	{
+		"@tailwindcss/cli": "^4.1.17",
+		"concurrently": "^9.2.1",
+		"tailwindcss": "^4.1.17",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme
+{
+	--font-sans: 'Inter', 'sans-serif';
+	--color-cyan-400: #22d3ee;
+}
+
+@layer base
+{
+	h1 { @apply
+		text-[3rem]
+		font-bold
+		text-white
+		mb-12
+	;}
+
+	a { @apply
+		px-3
+		py-2
+		text-sm
+		font-medium
+		text-gray-400
+		hover:text-white
+		transition-colors
+		duration-200
+		rounded-md
+	;}
+
+	section { @apply
+		snap-start
+		h-[100vh]
+		w-full
+		flex flex-col
+		justify-center items-center
+		p-[2rem]
+		text-center
+		border-b border-gray-800
+	;}
+
+	span { @apply
+		bg-gray-800
+		text-cyan-400
+		px-2 py-0.5
+		text-xs
+		font-medium
+		rounded-md
+	;}
+
+	h3 { @apply
+		text-lg
+		font-semibold
+		text-white
+	};
+}
+
+@layer components
+{
+	.projects-link { @apply
+		block
+		bg-gray-900
+		p-6
+		rounded-lg
+		border border-gray-800
+		hover:border-cyan-400
+		transition-colors duration-200
+	;}
+
+	.project-desc { @apply
+		text-sm
+		text-gray-400
+		mt-2
+	;}
+}

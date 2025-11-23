@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="snap-y snap-mandatory scroll-smooth overflow-x-hidden [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Portfolio of Alexis Bidolet--Foray, a 42 student and developer based in Lyon.">
+		<meta name="keywords" content="Alexis Bidolet--Foray, Student, Developer, Portfolio, 42, Lyon, C, C++, Web, DevOps">
+		<meta name="author" content="Alexis Bidolet--Foray">
+
+		<meta property="og:title" content="Alexis Bidolet--Foray | Portfolio">
+		<meta property="og:description" content="Check out my portfolio.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://abidolet.github.io">
+		<meta property="og:image" content="src/assets/preview.jpg">
+
+		<title>Portfolio</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+		<link href="./build/output.css" rel="stylesheet">
+	</head>
+
+	<body class="selection:bg-cyan-400 selection:text-black font-family-sans bg-gray-950 text-gray-300">
+
+		<nav class="fixed top-0 left-0 w-full z-50 bg-gray-950/70 backdrop-blur-md border-b border-gray-800/50">
+			<div id="nav-links" class="max-w-xl mx-auto flex justify-center items-center h-16 space-x-4 sm:space-x-8">
+				<a href="#profile">Profile</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</nav>
+
+		<main>
+
+			<section id="profile">
+				<p class="text-[2rem] text-cyan-400 font-medium">42 Student</p>
+				<h1 class="text-[3rem] font-bold text-white mt-4">Alexis BIDOLET--FORAY</h1>
+				<p class="text-lg text-gray-300 mt-6">
+					My name is Alexis, I'm a 42 student based in Lyon, France. <br>
+					Here's a recap of my journey as a developer, feel free to explore my projects! <br>
+					Actually looking for an internship for January 2025.
+				</p>
+
+				<div class="flex gap-x-5 justify-center mt-8">
+					<a href="./src/assets/resume.pdf" target="_blank">Resume</a>
+					<a href="https://github.com/abidolet" target="_blank">GitHub</a>
+					<a href="https://www.linkedin.com/in/alexis-b-4b01bb349/" target="_blank">LinkedIn</a>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="max-w-4xl">
+					<h1>Projects</h1>
+
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+
+						<a href="https://github.com/Maxime-juncker/minishell" target="_blank" class="projects-link">
+							<h3>Minishell</h3>
+							<p class="project-desc">
+								A custom shell implementation inspired by Bash. <br>
+								Features process management, signal handling, and built-in commands.
+							</p>
+							<div class="flex flex-wrap gap-2 mt-4">
+								<span>C</span>
+							</div>
+						</a>
+
+						<a href="https://github.com/abidolet/miniRT" target="_blank" class="projects-link">
+							<h3>MiniRT</h3>
+							<p class="project-desc">
+								A 3D pathtracer engine built from scratch. <br>
+								Renders realistic scenes using lights, shadows and textures mapping.
+							</p>
+							<div class="flex flex-wrap gap-2 mt-4">
+								<span>C</span>
+							</div>
+						</a>
+
+						<a href="https://github.com/abidolet/Webserv" target="_blank" class="projects-link">
+							<h3>Webserv</h3>
+							<p class="project-desc">
+								An HTTP 1.1 webserver similar to nginx. <br>
+								Handles non-blocking I/O, basic requests, and CGI execution.
+							</p>
+							<div class="flex flex-wrap gap-2 mt-4">
+								<span>C++</span>
+							</div>
+						</a>
+
+						<a href="https://github.com/abidolet/Inception" target="_blank" class="projects-link">
+							<h3>Inception</h3>
+							<p class="project-desc">
+								A Docker-based infrastructure project. <br>
+								Create volumes such as Nginx, MariaDB, and WordPress services in isolated containers.
+							</p>
+							<div class="flex flex-wrap gap-2 mt-4">
+								<span>Docker</span>
+								<span>Nginx</span>
+								<span>MariaDB</span>
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="max-w-4xl w-full">
+					<h1>Skills</h1>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+						<div class="flex flex-col items-center">
+							<h2 class="text-xl font-semibold text-white mb-4">Software Development</h2>
+							<ul class="space-y-2 text-gray-400">
+								<li>C</li>
+								<li>C++</li>
+							</ul>
+						</div>
+
+						<div class="flex flex-col items-center">
+							<h2 class="text-xl font-semibold text-white mb-4">Web</h2>
+							<ul class="space-y-2 text-gray-400">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Tailwind</li>
+								<li>TypeScript</li>
+							</ul>
+						</div>
+
+						<div class="flex flex-col items-center">
+							<h2 class="text-xl font-semibold text-white mb-4">DevOps</h2>
+							<ul class="space-y-2 text-gray-400">
+								<li>Git & GitHub</li>
+								<li>Docker</li>
+								<li>Nginx</li>
+								<li>MariaDB</li>
+								<li>Bash & Shell</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="max-w-lg">
+					<h1>Contact</h1>
+					<p class="text-lg text-gray-400 mb-8">
+						Actually looking for an internship for January 2025. <br>
+						Open for a work-study program in mid-2025 <br>
+						Feel free to reach out if you have any opportunities or questions!
+					</p>
+					<a href="mailto:alexis.bidoletforay@gmail.com"
+					class="inline-block bg-cyan-400 text-gray-950 font-bold px-8 py-3 rounded-md text-lg hover:bg-cyan-300 transition-colors duration-200">
+						Send an Email
+					</a>
+				</div>
+			</section>
+
+		</main>
+
+		<script src="./build/main.js"></script>
+	</body>
+</html>
